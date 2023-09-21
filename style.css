@@ -25,10 +25,12 @@ body{
     background-color: #111;
     clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     animation: animation 4s linear infinite;
+    transition: 1s;
 }
 
 .hexagon:hover{
     background-color: #0f0;
+    transition: 0s;
 }
 
 @keyframes animation{
@@ -38,4 +40,15 @@ body{
     100%{
         filter: hue-rotate(360deg);
     }
+}
+
+.hexagon::after{
+    content: '';
+    position: absolute;
+    top: 4px;
+    bottom: 4px;
+    left: 4px;
+    right: 4px;
+    background-color: #111;
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
