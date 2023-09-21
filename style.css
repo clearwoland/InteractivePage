@@ -4,7 +4,7 @@
 }
 
 body{
-    background-color: black;
+    background-color: #000;
 }
 
 .row{
@@ -22,10 +22,20 @@ body{
     width: 100px;
     height: 110px;
     margin: 2px;
-    background-color: rgb(27, 10, 90);
+    background-color: #111;
     clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    animation: animation 4s linear infinite;
 }
 
 .hexagon:hover{
-    background-color: #ebe1e1;
+    background-color: #0f0;
+}
+
+@keyframes animation{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
 }
