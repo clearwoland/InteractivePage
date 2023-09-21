@@ -3,9 +3,29 @@
     padding: 0px;
 }
 
+body{
+    background-color: black;
+}
+
+.row{
+    display: inline-flex;
+    margin-top: -32px;
+    margin-left: -50px;
+    
+}
+
+.row:nth-child(even){
+    margin-left: 2px;
+}
+
 .hexagon{
     width: 100px;
     height: 110px;
-    background-color: black;
+    margin: 2px;
+    background-color: rgb(27, 10, 90);
     clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.hexagon:hover{
+    background-color: #ebe1e1;
 }
