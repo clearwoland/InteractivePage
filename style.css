@@ -7,11 +7,15 @@ body{
     background-color: #000;
 }
 
+.container{
+    position: relative;
+}
+
 .row{
     display: inline-flex;
     margin-top: -32px;
     margin-left: -50px;
-    
+    z-index: auto;
 }
 
 .row:nth-child(even){
@@ -51,4 +55,50 @@ body{
     right: 4px;
     background-color: #111;
     clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+
+.ellipse{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    z-index: 1;
+}
+.orange{
+    position: absolute;
+    z-index: 2;
+}
+
+.blue{
+    position: absolute;
+    z-index: 3;
+}
+
+.purple{
+    position: absolute;
+    z-index: 4;
+    margin-top: 40px;
+    margin-left: 95px;
+}
+
+.purple02{
+    position: absolute;
+    z-index: 4;
+    margin-top: 90px;
+    margin-left: 85px;
+}
+
+.red{
+    position: absolute;
+    z-index: 5;
+    margin-top: 120px;
+    margin-left: 140px;
+
+}
+
+.white{
+    position: absolute;
+    z-index: 6;
+    margin: 120px 0px 0px 120px;
+
 }
