@@ -102,3 +102,22 @@ body{
     margin: 120px 0px 0px 120px;
 
 }
+
+
+.defects_text{
+    position: absolute;
+    z-index: 7;
+    top: 50px;
+    left: 50px;
+    color: whitesmoke;
+    transform: rotate(30deg);
+}
+
+.purple_text{
+    position: absolute;
+    z-index: 7;
+    top: 50px;
+    left: 50px;
+    color: whitesmoke;
+    
+}
